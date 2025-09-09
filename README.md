@@ -3,7 +3,7 @@ A mini-project built with **HTML, CSS, and JavaScript** that demonstrates modal 
 
 ## Live
 
-![🍳 Recipes in 3 Steps](link-to-image-or-gif)  
+![🍳 Recipes in 3 Steps]([link-to-image-or-gif](https://linnetdev.github.io/Recipes-in-3-Steps/))  
 
 
 ---

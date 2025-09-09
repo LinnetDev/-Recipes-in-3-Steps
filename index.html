@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Recipes in 3 Steps</title>
+  </head>
+  <body>
+    <h1 class="title">🍳 Recipes in 3 Steps</h1>
+
+    <button class="show-modal" data-id="0">Avocado Toast</button>
+    <button class="show-modal" data-id="1">Smoothie</button>
+    <button class="show-modal" data-id="2">Greek Salad</button>
+
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h2 class="modal-title">Recipe title</h2>
+      <img class="modal-img" src="" alt="Recipe image" />
+      <p class="modal-text">Recipe description...</p>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

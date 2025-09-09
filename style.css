@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 75%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #333;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(to top left, #ffcc70, #ff8177);
+  padding: 3rem;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.show-modal {
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  background: #fff;
+  color: #444;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s; /*?*/
+}
+.show-modal:hover {
+  transform: scale(1.05);
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.modal img {
+  width: 100%; /* full width of the modal */
+  border-radius: 1rem;
+  margin: 1rem 0;
+  max-height: 60vh; /* maximum 60% of the viewport height */
+  object-fit: contain; /* preserves aspect ratio, does not crop the image */
+}
+
+.modal-title {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #ff6f61;
+}
+
+.modal-text {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #444;
+  text-align: left;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 3rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #666;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 5;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-height: 600px) {
+  .modal img {
+    max-height: 50vh; /* slightly smaller on short screens */
+  }
+}
+
+.modal {
+  max-height: 90vh; /* max 90% of viewport height */
+  overflow-y: auto; /* adds scroll if content overflows */
+}
